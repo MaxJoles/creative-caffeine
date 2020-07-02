@@ -2,7 +2,7 @@
 var currentTime = new Date().getHours();
 console.log(currentTime);
 if (5 <= currentTime && currentTime < 11) {
-    $('.image-switch').attr("src", "https://uploads-ssl.webflow.com/5cc86f0e9b8ac6a99fddf645/5efb25d3cf4e50457ea99f18_mornning-cc.png");
+    $('.image-switch').forEach(target => target.classList.add('morning'));
     console.log("morning");
     console.log("testtt");
 }
