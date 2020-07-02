@@ -4,6 +4,7 @@ console.log(currentTime);
 if (5 <= currentTime && currentTime < 11) {
     $('.image-switch').attr("src", "https://uploads-ssl.webflow.com/5e750966afbf2f3b3f235449/5ef63ac95f6d2b33ec7b3583_Morning_Image.png");
     console.log("morning");
+    console.log("testtt");
 }
 
 else if (11 <= currentTime && currentTime < 17) {
