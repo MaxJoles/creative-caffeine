@@ -3,7 +3,8 @@ var currentTime = new Date().getHours();
 console.log(currentTime);
 if (5 <= currentTime && currentTime < 11) {
     console.log('morning');
-    $('[theme=dynamic]').forEach(target => target.classList.add('morning'));
+    $('[theme=dynamic]').addClass( "morning" );
+
 
 }
 
@@ -13,5 +14,5 @@ else if (11 <= currentTime && currentTime < 17) {
 
 else {
     console.log('night');
-    $('[theme=dynamic]').forEach(target => target.classList.add('night'));
+    $('[theme=dynamic]').addClass( "night" );
 }
