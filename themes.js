@@ -9,6 +9,7 @@ if (5 <= currentTime && currentTime < 11) {
 
 else if (11 <= currentTime && currentTime < 17) {
     $('.image-switch').attr("src", "https://uploads-ssl.webflow.com/5cc86f0e9b8ac6a99fddf645/5efb25954f1c9a59f14f771c_day-cc.png");
+    $('.image-switch').attr("srcset", "https://uploads-ssl.webflow.com/5cc86f0e9b8ac6a99fddf645/5efb25954f1c9a59f14f771c_day-cc.png");
     console.log("afternoon");
 }
 
