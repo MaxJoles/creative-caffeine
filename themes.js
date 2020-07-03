@@ -1,9 +1,14 @@
 // Styles webflow theme based on time of day
 var currentTime = new Date().getHours();
 console.log(currentTime);
-if (5 <= currentTime && currentTime < 11) {
+
+var dynamicThemeSelector = '[theme=dynamic]';
+var times = {am: 5, mid: 11, pm: 17 };
+
+
+if (times.am <= currentTime && currentTime < times.mid) {
     console.log('morning');
-    $('[theme=dynamic]').addClass( "morning" );
+    $(dynamicThemeSelector).addClass( "morning" );
 
 
 }
@@ -14,5 +19,5 @@ else if (11 <= currentTime && currentTime < 17) {
 
 else {
     console.log('night');
-    $('[theme=dynamic]').addClass( "night" );
+    $(dynamicThemeSelector).addClass( "night" );
 }
