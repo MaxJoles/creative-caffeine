@@ -2,14 +2,13 @@
 var currentTime = new Date().getHours();
 console.log(currentTime);
 
-var dynamicThemeSelector = '[theme=dynamic]';
+var dynamicThemeSelector = '[cc=theme]';
 var times = {am: 5, mid: 11, pm: 17 };
 
 
 if (times.am <= currentTime && currentTime < times.mid) {
     console.log('morning');
     $(dynamicThemeSelector).addClass( "morning" );
-
 
 }
 
